@@ -9,7 +9,13 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+import { Navbar } from "./component/Navbar";
+import { Jumbotron } from "./component/Jumbotron";
+import { Card } from "./component/Card";
+import { Footer } from "./component/Footer";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<Navbar />, document.querySelector("#app"));
+ReactDOM.render(<Jumbotron />, document.querySelector("#app"));
+ReactDOM.render(<Card />, document.querySelector("#app"));
+ReactDOM.render(<Footer />, document.querySelector("#app"));
